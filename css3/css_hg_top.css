@@ -1,0 +1,75 @@
+
+div#myTopbar{
+  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+  color: #ffffc1!important;  /* lichtgeel  */
+  background-color: #036!important;
+}
+
+nav#mySidebar {
+ top: unset!important;
+ bottom: unset!important;
+
+ font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+ font-size: 17px;
+ font-weight: bold;
+}
+
+nav.w3-sidebar-hg {
+ top: unset!important;
+ bottom: unset!important;
+}
+
+.visionq_small_width{
+    max-width: 993px;
+}
+.visionq_smal{
+    margin-left: auto;
+    margin-right: auto;
+}
+.visionq_topbar_smal{
+    margin-left: auto!important;
+    margin-right: auto!important;
+/*    position:absolute;
+    left:0px;  */
+}
+.visionq_footer_smal{
+ position:absolute;
+ left:0px;
+}
+
+.main-visionq{
+/*  kleuren van #content - sectie in standaard.css */
+	background-color: #ffffc1;  /* lichtgeel  */
+}
+
+.main-theme-visionq{
+/*  kleuren van #content - sectie in standaard.css */
+	background-color: #ffffc1;  /* lichtgeel  */
+}
+
+.italic_visionq{
+    font-style: italic;
+}
+
+.ul-visionq{
+  list-style-type: none;
+}
+.link-visionq{
+/*   text-decoration: unset!important;  */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.quote-visionq{
+   font-size: 11px;
+   color: rgb(255,0,0);   
+}
+
+.copyright_vq{
+    font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+    color: #036;
+    text-align: right;
+    margin-right: 20px;
+    padding-bottom: 10px;
+
+}
