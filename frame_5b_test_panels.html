@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>frame_5b_test_panels</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css3/w3.css">
+<link rel="stylesheet" href="css3/css_hg_top.css">
+<link rel="stylesheet" href="css3/w3-theme-hg.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/*
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+*/
+
+html,body,h1,h2,h3,h4,h5,h6 {
+  color: #036;                 /*  uit body van standaard.css  */
+  background-color: #5e8bad;   /* donkerblauw   uit body van standaard.css  */
+  Verdana, Arial, Helvetica, sans-serif;
+}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+</style>
+<body>
+
+  <!--
+
+hier responsive top-bar:  https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive
+  (alle items onder elkaar)
+  -->
+
+<!-- Nvbar on image : https://www.w3schools.com/howto/howto_css_navbar_image.asp-->
+<div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large" id="myTopbar">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">VisionQuest</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Programma</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Agenda</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Voorbereiding</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Praktisch</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Individueel</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Training</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Visie</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Literatuur</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Over ons</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
+    </div>
+</div>
+<img src="afbeeldingen/visionquest_terschel_header_1797_328.jpg" alt="Terschelling" style="width:100%">
+
+<!-- Sidebar -->
+<!--
+ class w3-sidebar overrulen met top: 380px (= min-height van class bg-image)
+ class w3-theme-l5  weggehaald
+ height: fit-content -> komt niet bovenop de footer-image
+ z-index:99
+-->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5-visionq w3-animate-left" id="mySidebar" style="top:240px">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Home</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">VisionQuest</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Programma</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Agenda</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Voorbereiding</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Praktisch</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Individueel</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Training</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Visie</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Literatuur</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Over ons</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Contact</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div style="width:50px;height: inherit">
+</div>
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="main-theme-visionq">
+<div class="w3-main main-theme-visionq" id="myMain" style="margin-left:250px">
+
+  <!--  ============================================  -->
+    <div class="w3-row" style="padding-top:64px;">
+
+    <div class="w3-half w3-container">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+    </div>
+
+
+    <div class="w3-half w3-container">
+
+      <div class="xw3-panel panel_visionq">
+
+       <p class="quote-visionq_orig">
+         ......"Mijn vision quests brachten me bij mijn diepste essentie, bij mijn innerlijke weten.
+         Alle maskers vallen af, je hoeft niets meer hoog te houden. Een ontmoeting met wie ik in wezen ben, in een veilige en heilige ruimte,
+         met de natuur als spiegel.
+         Dat weten reist met mij mee in mijn dagelijks leven.
+         Het helpt me om mijn koers te bepalen, trouw te blijven aan mezelf en werkelijke verbinding met anderen te maken.
+         Ik heb de begeleiding door het team als zeer ondersteunend ervaren.
+         Zij brachten rust, vertrouwen, praktische tips en geborgenheid bij het vuur. Dank jullie wel daarvoor."
+         Anna
+      </p>
+   </div>
+
+    </div>
+
+
+
+    </div>  <!--   end row   --->
+
+  <!--  ============================================  -->
+    <div class="w3-row" style="">
+
+    <div class="w3-half w3-container">
+
+      <div class="w3-panel xw3-sand panel_visionq" style="background-color:#e8e8ab">
+
+       <p class="test_quote-visionq">
+         ......"Mijn vision quests brachten me bij mijn diepste essentie, bij mijn innerlijke weten.
+         Alle maskers vallen af, je hoeft niets meer hoog te houden. Een ontmoeting met wie ik in wezen ben, in een veilige en heilige ruimte,
+         met de natuur als spiegel.
+         Dat weten reist met mij mee in mijn dagelijks leven.
+         Het helpt me om mijn koers te bepalen, trouw te blijven aan mezelf en werkelijke verbinding met anderen te maken.
+         Ik heb de begeleiding door het team als zeer ondersteunend ervaren.
+         Zij brachten rust, vertrouwen, praktische tips en geborgenheid bij het vuur. Dank jullie wel daarvoor."
+         Anna
+      </p>
+   </div>
+    </div>
+
+
+    <div class="w3-half w3-container container_vq_image">
+
+        <img  class="w3-image" src="afbeeldingen/VQlokatie1.jpg" alt="" width="318" height="239">
+    </div>
+
+
+
+    </div>  <!--   end row   --->
+
+  <!--  ============================================  -->
+    <div class="w3-row" style="">
+
+    <div class="w3-half w3-container">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+    </div>
+
+
+    <div class="w3-half w3-container">
+
+<!--       <div class="w3-panel xw3-sand panel_visionq" style="background-color:#bbdeaf!important;">  groen -->
+
+<!-- #c6c68b groenbruin    #f4f3cc  -->
+        <div class="w3-panel xw3-sand panel_visionq" style="background-color:#f4f3cc!important;">
+
+       <p class="test_quote-visionq" >
+
+         ......"Mijn vision quests brachten me bij mijn diepste essentie, bij mijn innerlijke weten.
+         Alle maskers vallen af, je hoeft niets meer hoog te houden. Een ontmoeting met wie ik in wezen ben, in een veilige en heilige ruimte,
+         met de natuur als spiegel.
+         Dat weten reist met mij mee in mijn dagelijks leven.
+         Het helpt me om mijn koers te bepalen, trouw te blijven aan mezelf en werkelijke verbinding met anderen te maken.
+         Ik heb de begeleiding door het team als zeer ondersteunend ervaren.
+         Zij brachten rust, vertrouwen, praktische tips en geborgenheid bij het vuur. Dank jullie wel daarvoor."
+         Anna
+      </p>
+   </div>
+
+    </div>
+
+
+
+    </div>  <!--   end row   --->
+
+  <!--  ============================================  -->
+    <div class="w3-row" style="">
+
+      <div class="w3-half w3-container container_vq_image">
+
+          <img  class="w3-image" src="afbeeldingen/VQlokatie2.jpg" alt="" width="327" height="245">
+
+      </div>
+
+
+    <div class="w3-half w3-container">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+    </div>
+
+
+
+    </div>  <!--   end row   --->
+    <div class="w3-row" style="">
+
+
+    <div class="w3-half w3-container">
+
+      <div class="w3-panel xw3-sand panel_visionq" style="background-color:#f2fedc!important;">
+
+     <p class="test_quote-visionq" >
+
+       ......"Mijn vision quests brachten me bij mijn diepste essentie, bij mijn innerlijke weten.
+       Alle maskers vallen af, je hoeft niets meer hoog te houden. Een ontmoeting met wie ik in wezen ben, in een veilige en heilige ruimte,
+       met de natuur als spiegel.
+       Dat weten reist met mij mee in mijn dagelijks leven.
+       Het helpt me om mijn koers te bepalen, trouw te blijven aan mezelf en werkelijke verbinding met anderen te maken.
+       Ik heb de begeleiding door het team als zeer ondersteunend ervaren.
+       Zij brachten rust, vertrouwen, praktische tips en geborgenheid bij het vuur. Dank jullie wel daarvoor."
+       Anna
+    </p>
+  </div>
+ </div>
+
+    <div class="w3-half w3-container container_vq_image">
+
+        <img  class="w3-image" src="afbeeldingen/basiskamp_klein.jpg" alt="" width="327" height="245">
+
+    </div>
+
+
+
+    </div>  <!--   end row   --->
+    <div class="w3-row" style="">
+
+      <div class="w3-half w3-container container_vq_image">
+
+          <img  class="w3-image" src="afbeeldingen/despacho_klein.jpg" alt="" width="327" height="245">
+
+      </div>
+
+
+    <div class="w3-half w3-container">
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+    </div>
+
+
+
+    </div>  <!--   end row   --->
+    <div class="w3-row" style="">
+
+
+    <div class="w3-half w3-container">
+
+      <div class="w3-panel xw3-sand panel_visionq" style="background-color:#fafaee!important;">
+
+     <p class="test_quote-visionq" >
+
+       ......"Mijn vision quests brachten me bij mijn diepste essentie, bij mijn innerlijke weten.
+       Alle maskers vallen af, je hoeft niets meer hoog te houden. Een ontmoeting met wie ik in wezen ben, in een veilige en heilige ruimte,
+       met de natuur als spiegel.
+       Dat weten reist met mij mee in mijn dagelijks leven.
+       Het helpt me om mijn koers te bepalen, trouw te blijven aan mezelf en werkelijke verbinding met anderen te maken.
+       Ik heb de begeleiding door het team als zeer ondersteunend ervaren.
+       Zij brachten rust, vertrouwen, praktische tips en geborgenheid bij het vuur. Dank jullie wel daarvoor."
+       Anna
+    </p>
+  </div>
+
+    </div>
+
+    <div class="w3-half w3-container container_vq_image">
+
+        <img  class="w3-image" src="afbeeldingen/blauwe kiekendief.jpg" alt="" width="327" height="245">
+
+    </div>
+
+
+
+    </div>  <!--   end row   --->
+
+  <!--  ============================================  -->
+    <div class="w3-row" style="">
+
+    <div class="w3-half w3-container">
+
+   <p>
+   </p>
+    </div>
+
+
+    <div class="w3-half w3-container">
+
+      <p><strong></strong> </p>
+
+    </div>
+
+
+
+    </div>  <!--   end row   --->
+
+  <!--  ============================================  -->
+  <div class="w3-row" style="">
+
+  <div class="w3-half w3-container">
+
+ <p>
+ </p>
+  </div>
+
+
+  <div class="w3-half w3-container">
+
+    <p><strong></strong> </p>
+
+  </div>
+
+
+
+  </div>  <!--   end row   --->
+
+<!--  ============================================  -->
+<div class="w3-row" style="">
+
+<div class="w3-half w3-container">
+
+<p>
+</p>
+</div>
+
+
+<div class="w3-half w3-container">
+
+  <p><strong></strong> </p>
+
+</div>
+
+
+
+</div>  <!--   end row   --->
+
+<!--  ============================================  -->
+
+
+<!--  met ;margin-bottom:10px komt er een strook blauwe achtergrond zichtbaar  -->
+  <div class="footer copyright_vq">&copy; 2019 VisionQuest Natuurretraite Nederland</div>
+
+<!-- END MAIN -->
+</div>
+</div>
+<!--  ;z-index:99 -->
+<div class="w3-bar" style="position:relative">
+  <footer id="myFooter"class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+      <img class="w3-image" src="afbeeldingen/visionquest_terschel_footer_4608_305.jpg" alt="VisionQuest_Terschelling" width="1600" height="800">
+  </footer>
+</div>
+
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+var myMainDiv= document.getElementById("myMain");
+var ss = "";
+var count;
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+
+    //alert(myMainDiv.offsetHeight);
+    count= myMainDiv.offsetHeight;
+    ss = count + "px";
+    //alert(ss);
+
+    mySidebar.style.height = ss;
+
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>
