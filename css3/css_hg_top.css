@@ -5,10 +5,21 @@ div#myTopbar{
   background-color: #036!important;
 }
 
+div#hgDropDownMore .button{
+  color: #ffffc1!important;  /* lichtgeel  */
+  background-color: #036!important;
+}
+
+div#hgDropDownContent{
+  color: #ffffc1!important;  /* lichtgeel  */
+  background-color: #036!important;
+}
+
 nav#mySidebar {
  top: unset!important;
  bottom: unset!important;
 
+ height: fit-content!important;  /*  anders wordt hij oneindig lang */
  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
  font-size: 17px;
  font-weight: bold;
@@ -51,6 +62,16 @@ nav.w3-sidebar-hg {
     font-style: italic;
 }
 
+.container_vq_image{
+  padding-top: 32px!important;
+  padding-bottom: 32px!important;
+  text-align: center;
+}
+
+.panel_visionq{
+
+}
+
 .ul-visionq{
   list-style-type: none;
 }
@@ -60,9 +81,29 @@ nav.w3-sidebar-hg {
   font-weight: bold;
 }
 
-.quote-visionq{
-   font-size: 11px;
-   color: rgb(255,0,0);   
+.quote-visionq_orig{
+   font-size: 13px; /*  orig 11px; */
+   font-style: italic;
+   line-height: 1.5;
+   color: rgb(255,0,0);
+   padding-top: 32px!important;
+   padding-bottom: 32px!important;
+}
+
+.xquote-visionq{
+   font-size: 12px;
+   line-height: 1.5;
+   color: rgb(255,0,0);
+   padding-bottom: 32px!important;
+}
+
+
+.test_quote-visionq{
+   font-size: 13px;
+   font-style: italic;
+   padding-bottom: 32px!important;
+   color: #000!important;
+   /* background-color:  #bbdeaf!important;  */
 }
 
 .copyright_vq{
