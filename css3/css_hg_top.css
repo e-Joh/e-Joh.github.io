@@ -25,23 +25,49 @@ nav#mySidebar {
  font-weight: bold;
 }
 
+nav#mySidebarNw {
+ /* top: unset!important; */
+/* bottom: unset!important; */
+
+ /* height: fit-content!important;*/  /*  anders wordt hij oneindig lang */
+ font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+ font-size: 17px;
+ font-weight: bold;
+}
+
 nav.w3-sidebar-hg {
  top: unset!important;
  bottom: unset!important;
 }
 
+.visionq_body_smal{
+    max-width: 993px;
+    margin: auto;
+}
+
 .visionq_small_width{
     max-width: 993px;
+}
+.visionq_main_smal{
+    margin-left: 200px!important;
+    margin-right: auto;
+
 }
 .visionq_smal{
     margin-left: auto;
     margin-right: auto;
+
 }
 .visionq_topbar_smal{
     margin-left: auto!important;
     margin-right: auto!important;
 /*    position:absolute;
     left:0px;  */
+}
+
+.sidebar_visionq_smal{
+ width: 200px!important;
+
 }
 .visionq_footer_smal{
  position:absolute;
