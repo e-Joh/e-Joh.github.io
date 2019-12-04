@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>index_v3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css3/w3.css">
+<link rel="stylesheet" href="css3/css_hg_top.css">
+<link rel="stylesheet" href="css3/w3-theme-hg.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+/*
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+*/
+
+html{
+  background-color: #ffffc1;   /* lichtgeel dus niet meer donkerblauw, zoals body;  (=standaard.css)  */
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+  color: #036;                 /*  uit body van standaard.css  */
+  background-color: #5e8bad;   /* donkerblauw   uit body van standaard.css  */
+  Verdana, Arial, Helvetica, sans-serif;
+}
+@media (min-width:993px){.hg-sidebar{top:250px!important}}
+@media (max-width:992px){.hg-sidebar{top:20px!important}}
+
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 250px;
+  bottom: 0;
+  height: inherit;
+}
+
+</style>
+<body  class="visionq_body_breed">
+<!-- Nvbar on image : https://www.w3schools.com/howto/howto_css_navbar_image.asp-->
+<!---
+
+
+hier "more..> in topbar van een template:
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_website&stacked=h
+
+drop-down button "meer .."
+uit: https://www.w3schools.com/w3css/w3css_navigation.asp
+<div class="w3-dropdown-hover w3-mobile">
+  <button class="w3-button">Dropdown <i class="fa fa-caret-down"></i></button>
+  <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+
+hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+-->
+
+<div class="w3-top">
+    <div class="w3-bar xw3-theme w3-left-align w3-large" id="myTopbar">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</div>  <!--   end myTopBar    -->
+</div>
+<img src="afbeeldingen/visionquest_terschel_header_1797_328.jpg" alt="Terschelling" style="width:100%">
+
+<!-- Sidebar -->
+<!--
+ class w3-sidebar overrulen met top: 380px (= min-height van class bg-image)
+ class w3-theme-l5  weggehaald
+ height: fit-content -> komt niet bovenop de footer-image
+ z-index:99
+-->
+
+<nav class="w3-sidebar hg-sidebar sidebar_visionq_breed w3-bar-block w3-collapse w3-large w3-theme-l5-visionq w3-animate-left" id="mySidebarNw2" >
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="index_v3.html">Home</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">VisionQuest</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="programma_v3.html">Programma</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Agenda</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Voorbereiding</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Praktisch</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Individueel</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Training</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Visie</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Literatuur</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#">Over ons</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="contact_v3.html">Contact</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div style="width:50px;height: inherit">
+</div>
+
+<div class="main-theme-visionq">
+  <div class="w3-main main-theme-visionq" id="myMain" style="margin-left:220px">
+
+    <!--  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
+
+    <div class="w3-container"  style="padding-bottom:0px!important">
+
+    <p class="w3-xlarge">
+      Vision Quest - Natuurretraite op Terschelling</p>
+    </div>
+
+    <!--  <div class="w3-row w3-padding-64"> -->
+      <div class="w3-row" style="padding-top:0px!important">
+
+        <div class="w3-half w3-container">
+
+          <p class="italic_visionq">Als je ziel voeding van de natuur nodig heeft.</p>
+
+    <p>In alle tijden en op alle plaatsen hebben mensen de stilte en de rust van de natuur opgezocht om zich open te stellen
+      voor een intense ontmoeting met zichzelf en de natuur.
+      Een Vision Quest of Natuurretraite is voor iedereen die verandering in zijn leven voor ogen heeft of het oude wil loslaten.
+      Vier dagen en nachten breng je alleen door in de natuur. Alleen met jezelf, in verbinding met de natuurkrachten.
+    </p>
+
+    <p>
+    Als je deze ontmoeting aan wilt gaan staat een ervaren team klaar om je te begeleiden.
+    </p>
+        </div>
+
+
+        <div class="w3-half w3-container">
+
+          <img  class="w3-image" src="afbeeldingen/IMGP1347klein.jpg" alt="" width="488" height="365">
+
+        </div>
+
+
+      </div>  <!--   end row   --->
+
+      <div class="w3-row" >
+        <div class="w3-half w3-container container_vq_image">
+
+          <img  class="w3-image" src="afbeeldingen/rups3.jpeg" alt="" width="488" height="365">
+
+        </div>
+
+        <div class="w3-half w3-container" style="padding-top:32px">
+
+    <!-- <div class="w3-panel w3-pale-green"> -->
+    <div class="w3-panel panel_visionq">
+      <p class="test_quote-visionq">
+      ...... "De Vision Quest heeft mij rustiger gemaakt. Ik kijk nog meer van binnenuit, zie de les van de ervaring veel eerder en laat me minder meeslepen.
+      Ik heb niet direct een antwoord klaar en ben meer een waarnemer. Ja, ik ben er diepzinniger door geworden.
+      Maak me nog minder druk om alledaagse beslommeringen, heb er geen mening meer over maar doe het gewoon of niet.
+      Ik ben en blijf dan in mijn verstilling, mijn kern, in wat werkelijk belangrijk voor me is. Het ego getemd en veel meer omarmd.
+      Ik ben er nog niet, maar heerlijk vooruit en geniet van de stilstand als die er is......"
+      Jaco
+    </p>
+
+    </div>
+        </div>
+
+      </div>    <!--   end row   --->
+
+      <!--  met ;margin-bottom:10px komt er een strook blauwe achtergrond zichtbaar  -->
+        <div class="footer copyright_vq">&copy; 2019 VisionQuest Natuurretraite Nederland</div>
+
+        <!-- <div class="w3-bar" style="position:relative">
+          <footer id="myFooter"class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+              <img class="w3-image" src="afbeeldingen/visionquest_terschel_footer_4608_305.jpg" alt="VisionQuest_Terschelling" width="1600" height="800">
+          </footer>
+        </div> -->
+
+<!-- END MAIN -->
+</div>
+</div>
+
+<div class="w3-bar" style="position:relative">
+  <footer id="myFooter"class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+      <img class="w3-image" src="afbeeldingen/visionquest_terschel_footer_4608_305.jpg" alt="VisionQuest_Terschelling" width="1600" height="800">
+  </footer>
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebarNw2");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+var myMainDiv= document.getElementById("myMain");
+var ss = "";
+var count;
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+
+
+    mySidebar.style.display = 'none';
+
+  //  mySidebar.style.top = null;
+  //  mySidebar.style.top = '1000px!important';
+    overlayBg.style.display = "none";
+  } else {
+
+
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+
+    //alert(myMainDiv.offsetHeight);
+
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+// -----------------------------------
+// function myFuncMeer() {
+//   var x = document.getElementById("hgDropDownContent");
+//   if (x.className.indexOf("w3-show") == -1) {
+//     x.className += " w3-show";
+//   } else {
+//     x.className = x.className.replace(" w3-show", "");
+//   }
+// }
+
+//=====================================================
+$(document).ready(function(){
+    var scrolling = false;
+
+setInterval( function() {
+  if ( scrolling ) {
+    scrolling = false;
+    // Do your thang!
+     }
+  }, 250 );
+
+  $( window ).scroll( function() {
+    scrolling = true;
+        //$( "p" ).last().text( "window.pageYOffset:" + window.pageYOffset + "  ; position : " + $("#mySidebarNw2.w3-sidebar").css("top" ) ) ;
+
+        if( window.pageYOffset < 250)
+        {
+            if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll50") )  $("#mySidebarNw2.w3-sidebar").removeClass("side_vq_scroll50");
+        }
+        if( window.pageYOffset > 250)
+        {
+           $("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll50");
+        }
+   });
+// ==================================================
+}); // end document ready
+
+
+</script>
+
+</body>
+</html>
