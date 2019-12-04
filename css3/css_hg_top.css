@@ -1,43 +1,10 @@
-
-div#myTopbar{
-  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
-  color: #ffffc1!important;  /* lichtgeel  */
-  background-color: #036!important;
+.italic_visionq{
+    font-style: italic;
 }
 
-div#hgDropDownMore .button{
-  color: #ffffc1!important;  /* lichtgeel  */
-  background-color: #036!important;
-}
-
-div#hgDropDownContent{
-  color: #ffffc1!important;  /* lichtgeel  */
-  background-color: #036!important;
-}
-
-nav#mySidebar {
- top: unset!important;
- bottom: unset!important;
-
- height: fit-content!important;  /*  anders wordt hij oneindig lang */
- font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
- font-size: 17px;
- font-weight: bold;
-}
-
-nav#mySidebarNw {
- /* top: unset!important; */
-/* bottom: unset!important; */
-
- /* height: fit-content!important;*/  /*  anders wordt hij oneindig lang */
- font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
- font-size: 17px;
- font-weight: bold;
-}
-
-nav.w3-sidebar-hg {
- top: unset!important;
- bottom: unset!important;
+.visionq_body_breed{
+    max-width: 1366px; /*  laptop : 1366 x 768 = 16: 9  */
+    margin: auto;
 }
 
 .visionq_body_smal{
@@ -48,16 +15,13 @@ nav.w3-sidebar-hg {
 .visionq_small_width{
     max-width: 993px;
 }
-.visionq_main_smal{
-    margin-left: 200px!important;
-    margin-right: auto;
 
+div#myTopbar{
+  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+  color: #ffffc1!important;  /* lichtgeel  */
+  /* background-color: #036!important; */
 }
-.visionq_smal{
-    margin-left: auto;
-    margin-right: auto;
 
-}
 .visionq_topbar_smal{
     margin-left: auto!important;
     margin-right: auto!important;
@@ -65,13 +29,76 @@ nav.w3-sidebar-hg {
     left:0px;  */
 }
 
-.sidebar_visionq_smal{
- width: 200px!important;
 
+nav#mySidebar {
+ top: unset!important;
+ bottom: unset!important;
+
+ height: fit-content!important;
+ font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+ font-size: 17px;
+ font-weight: bold;
+}
+
+
+/* voor brede pagina's  */
+/*top: unset!important;  */
+/* bottom: unset!important; */
+/*position:unset!important; */
+/*height: fit-content!important; */
+/*  lit: https://stackoverflow.com/questions/28352873/css-height-100-vs-height-inherit/28352920  */
+/* height: fit-content!important; */
+/*  anders wordt hij oneindig lang */
+nav#mySidebarNw2 {
+ font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+ font-size: 17px;
+ font-weight: bold;
+}
+
+nav#mySidebar_smal {
+ /*top: unset!important;  */
+/* bottom: unset!important; */
+/*position:unset!important; */
+/*height: fit-content!important; */
+/* height: inherit; */
+/* height: inherit;   */
+/*  lit: https://stackoverflow.com/questions/28352873/css-height-100-vs-height-inherit/28352920  */
+ /* height: fit-content!important; */ /*  anders wordt hij oneindig lang */
+ font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+ font-size: 17px;
+ font-weight: bold;
+}
+
+/*
+nav.w3-sidebar-hg {
+ top: unset!important;
+ bottom: unset!important;
+} */
+
+
+nav.sidebar_visionq_breed{
+  width: 220px!important;
+  /* height: inherit!important; */
+  height: fit-content!important;
+}
+
+nav.sidebar_visionq_smal{
+  width: 220px!important;
+  height: fit-content!important;
+   /*  lit: https://stackoverflow.com/questions/28352873/css-height-100-vs-height-inherit/28352920  */
+  /* height: fit-content!important; */ /*  anders wordt hij oneindig lang */
+}
+
+div#myOverlayNw{
+  z-index: 5!important;  /*  was: 2 */
 }
 .visionq_footer_smal{
  position:absolute;
  left:0px;
+}
+
+nav.w3-sidebar.side_vq_scroll50{
+  top: 50px!important;
 }
 
 .main-visionq{
@@ -84,8 +111,36 @@ nav.w3-sidebar-hg {
 	background-color: #ffffc1;  /* lichtgeel  */
 }
 
-.italic_visionq{
-    font-style: italic;
+
+.main_visionq_smal_en_kort{
+  height: 100%!important;
+}
+
+.visionq_main_smal{
+    margin-left: 200px!important;
+    margin-right: auto;
+}
+
+#myMain.visionq_main_smal{
+    margin-left: 200px!important;
+    margin-right: auto;
+}
+
+
+.visionq_smal{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.visionq_single_row{
+   padding-top:0px!important;
+   height:600px;
+}
+
+.visionq_single_row_smal{
+   padding-top:0px!important;
+   height:600px;
 }
 
 .container_vq_image{
@@ -95,7 +150,7 @@ nav.w3-sidebar-hg {
 }
 
 .panel_visionq{
-
+  background-color:#f2fedc!important;  /*   lichtgroen */
 }
 
 .ul-visionq{
@@ -139,4 +194,29 @@ nav.w3-sidebar-hg {
     margin-right: 20px;
     padding-bottom: 10px;
 
+/*  uit standaard.css */
+/* a:link {
+	font-weight: bold;
+	color: #036;
+	text-decoration: none;
+} */
+a:visited {
+	font-weight: bold;
+	color: #036;
+	text-decoration: none;
+}
+a:active {
+	font-weight: bold;
+	color: #036;
+	text-decoration: none;
+}
+a:hover {
+	font-weight: bold;
+	color: #B00000;
+	text-decoration: none;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
 }
