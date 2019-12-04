@@ -83,7 +83,7 @@ nav.sidebar_visionq_breed{
 }
 
 nav.sidebar_visionq_smal{
-  width: 220px!important;
+  width: 200px!important;
   height: fit-content!important;
    /*  lit: https://stackoverflow.com/questions/28352873/css-height-100-vs-height-inherit/28352920  */
   /* height: fit-content!important; */ /*  anders wordt hij oneindig lang */
