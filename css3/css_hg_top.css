@@ -1,205 +1,92 @@
 .italic_visionq{
     font-style: italic;
 }
-
 .visionq_body_breed{
-    max-width: 1366px; /*  laptop : 1366 x 768 = 16: 9  */
+    max-width: 1366px;
     margin: auto;
 }
-
-.visionq_body_smal{
-    max-width: 993px;
-    margin: auto;
-}
-
-.visionq_small_width{
-    max-width: 993px;
-}
-
 div#myTopbar{
   font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
-  color: #ffffc1!important;  /* lichtgeel  */
-  /* background-color: #036!important; */
+  color: #ffffc1!important;
 }
-
-.visionq_topbar_smal{
-    margin-left: auto!important;
-    margin-right: auto!important;
-/*    position:absolute;
-    left:0px;  */
-}
-
-
 nav#mySidebar {
  top: unset!important;
  bottom: unset!important;
-
  height: fit-content!important;
  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
  font-size: 17px;
  font-weight: bold;
 }
-
-
-/* voor brede pagina's  */
-/*top: unset!important;  */
-/* bottom: unset!important; */
-/*position:unset!important; */
-/*height: fit-content!important; */
-/*  lit: https://stackoverflow.com/questions/28352873/css-height-100-vs-height-inherit/28352920  */
-/* height: fit-content!important; */
-/*  anders wordt hij oneindig lang */
 nav#mySidebarNw2 {
  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
  font-size: 17px;
  font-weight: bold;
 }
-
-nav#mySidebar_smal {
- /*top: unset!important;  */
-/* bottom: unset!important; */
-/*position:unset!important; */
-/*height: fit-content!important; */
-/* height: inherit; */
-/* height: inherit;   */
-/*  lit: https://stackoverflow.com/questions/28352873/css-height-100-vs-height-inherit/28352920  */
- /* height: fit-content!important; */ /*  anders wordt hij oneindig lang */
- font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
- font-size: 17px;
- font-weight: bold;
-}
-
-/*
-nav.w3-sidebar-hg {
- top: unset!important;
- bottom: unset!important;
-} */
-
-
 nav.sidebar_visionq_breed{
   width: 220px!important;
-  /* height: inherit!important; */
-  height: fit-content!important;
+  height: 550px;
 }
-
-nav.sidebar_visionq_smal{
-  width: 200px!important;
-  height: fit-content!important;
-   /*  lit: https://stackoverflow.com/questions/28352873/css-height-100-vs-height-inherit/28352920  */
-  /* height: fit-content!important; */ /*  anders wordt hij oneindig lang */
-}
-
 div#myOverlayNw{
-  z-index: 5!important;  /*  was: 2 */
+  z-index: 5!important;
 }
-.visionq_footer_smal{
- position:absolute;
- left:0px;
-}
-
 nav.w3-sidebar.side_vq_scroll50{
   top: 50px!important;
 }
-
 .main-visionq{
-/*  kleuren van #content - sectie in standaard.css */
-	background-color: #ffffc1;  /* lichtgeel  */
+	background-color: #ffffc1;
 }
-
 .main-theme-visionq{
-/*  kleuren van #content - sectie in standaard.css */
-	background-color: #ffffc1;  /* lichtgeel  */
+	background-color: #ffffc1;
 }
-
-
-.main_visionq_smal_en_kort{
-  height: 100%!important;
-}
-
-.visionq_main_smal{
-    margin-left: 200px!important;
-    margin-right: auto;
-}
-
-#myMain.visionq_main_smal{
-    margin-left: 200px!important;
-    margin-right: auto;
-}
-
-
-.visionq_smal{
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
 .visionq_single_row{
    padding-top:0px!important;
    height:600px;
 }
-
 .visionq_single_row_smal{
    padding-top:0px!important;
    height:600px;
 }
-
 .container_vq_image{
   padding-top: 32px!important;
   padding-bottom: 32px!important;
   text-align: center;
 }
-
 .panel_visionq{
-  background-color:#f2fedc!important;  /*   lichtgroen */
+  background-color:#f2fedc!important;
 }
-
 .ul-visionq{
   list-style-type: none;
 }
 .link-visionq{
-/*   text-decoration: unset!important;  */
   text-decoration: none;
   font-weight: bold;
 }
-
 .quote-visionq_orig{
-   font-size: 13px; /*  orig 11px; */
+   font-size: 13px;
    font-style: italic;
    line-height: 1.5;
    color: rgb(255,0,0);
    padding-top: 32px!important;
    padding-bottom: 32px!important;
 }
-
 .xquote-visionq{
    font-size: 12px;
    line-height: 1.5;
    color: rgb(255,0,0);
    padding-bottom: 32px!important;
 }
-
-
 .test_quote-visionq{
    font-size: 13px;
    font-style: italic;
    padding-bottom: 32px!important;
    color: #000!important;
-   /* background-color:  #bbdeaf!important;  */
 }
-
 .copyright_vq{
     font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
     color: #036;
     text-align: right;
     margin-right: 20px;
     padding-bottom: 10px;
-
-/*  uit standaard.css */
-/* a:link {
-	font-weight: bold;
-	color: #036;
-	text-decoration: none;
-} */
 a:visited {
 	font-weight: bold;
 	color: #036;
@@ -215,7 +102,6 @@ a:hover {
 	color: #B00000;
 	text-decoration: none;
 }
-
 a {
 	outline: none;
 	text-decoration: none;
