@@ -24,7 +24,13 @@ nav#mySidebarNw2 {
 }
 nav.sidebar_visionq_breed{
   width: 220px!important;
-  height: 550px;
+  height: 520px;
+}
+nav.w3-sidebar.w3-collapse{
+  height: 500px!important;
+  font-size: 16px!important;
+  font-weight: 600!important;
+  line-height: 1.2;
 }
 div#myOverlayNw{
   z-index: 5!important;
