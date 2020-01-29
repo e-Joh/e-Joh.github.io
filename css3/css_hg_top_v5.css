@@ -1,0 +1,139 @@
+.italic_visionq{
+    font-style: italic;
+}
+.visionq_body_breed{
+    max-width: 1366px;
+    margin: auto;
+}
+div#myTopbar{
+  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+  color: #ffffc1!important;
+}
+nav#mySidebar {
+ top: unset!important;
+ bottom: unset!important;
+ height: fit-content!important;
+ font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+ font-size: 17px;
+ font-weight: bold;
+}
+nav#mySidebarNw2 {
+ font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+ font-size: 17px;
+ font-weight: bold;
+}
+nav.sidebar_visionq{
+  width: 220px!important;
+  height: 540px;
+}
+xnav.xw3-sidebar.xw3-collapse{
+  height: 500px!important;
+  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+  font-size: 16px!important;
+  font-weight: 600!important;
+  line-height: 1.1;
+}
+nav a.kruisje_visionq{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+div#myOverlayNw{
+  z-index: 5!important;
+}
+nav.w3-sidebar.side_vq_scroll50{
+  top: 50px!important;
+}
+nav.w3-sidebar.side_vq_scroll100{
+  top: 100px!important;
+}
+nav.w3-sidebar.side_vq_scroll150{
+  top: 150px!important;
+}
+nav.w3-sidebar.side_vq_scroll200{
+  top: 200px!important;
+}
+nav.w3-sidebar.side_vq_scroll250{
+  top: 250px!important;
+}
+nav.w3-sidebar.side_vq_scroll20{
+  top: 20px!important;
+}
+nav.w3-sidebar.side_vq_scroll40{
+  top: 40px!important;
+}
+nav.w3-sidebar.side_vq_scroll60{
+  top: 60px!important;
+}
+nav.w3-sidebar.side_vq_scroll80{
+  top: 80px!important;
+}
+.main-visionq{
+	background-color: #ffffc1;
+}
+.main-theme-visionq{
+	background-color: #ffffc1;
+}
+.visionq_single_row{
+   padding-top:0px!important;
+   height:600px;
+}
+.container_vq_image{
+  padding-top: 32px!important;
+  padding-bottom: 32px!important;
+  text-align: center;
+}
+.panel_visionq{
+  background-color:#f2fedc!important;
+}
+.ul-visionq{
+  list-style-type: none;
+}
+.link-visionq{
+  text-decoration: none;
+  font-weight: bold;
+}
+.quote-visionq_orig{
+   font-size: 13px;
+   font-style: italic;
+   line-height: 1.5;
+   color: rgb(255,0,0);
+   padding-top: 32px!important;
+   padding-bottom: 32px!important;
+}
+.xquote-visionq{
+   font-size: 12px;
+   line-height: 1.5;
+   color: rgb(255,0,0);
+   padding-bottom: 32px!important;
+}
+.test_quote-visionq{
+   font-size: 13px;
+   font-style: italic;
+   padding-bottom: 32px!important;
+   color: #000!important;
+}
+.copyright_vq{
+    font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+    color: #036;
+    text-align: right;
+    margin-right: 20px;
+    padding-bottom: 10px;
+a:visited {
+	font-weight: bold;
+	color: #036;
+	text-decoration: none;
+}
+a:active {
+	font-weight: bold;
+	color: #036;
+	text-decoration: none;
+}
+a:hover {
+	font-weight: bold;
+	color: #B00000;
+	text-decoration: none;
+}
+a {
+	outline: none;
+	text-decoration: none;
+}
