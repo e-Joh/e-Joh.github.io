@@ -259,29 +259,42 @@ setInterval( function() {
           if( myx > (250-maxdist-margin)){
            mytop=250;
            if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll250") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll250")};
+
+           console.log(" top wordt 250;");
           }
           else if( myx > (200-maxdist-margin) )
            {
                 mytop=200;
                 if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll200") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll200")};
+                console.log(" top wordt 200;");
           }
           else if( myx > (150-maxdist-margin) )
           {
                mytop=150;
                if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll150") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll150")};
+               console.log(" top wordt 150;");
+
          }
          else if( myx > (100-maxdist-margin) )
          {
               mytop=100;
               if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll100") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll100")};
+              console.log(" top wordt 100;");
+
         }
         else if( myx > (50-maxdist-margin) )
         {
              mytop=50;
              if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll50") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll50")};
+             console.log(" top wordt 50;");
+
         }
         else{
           mytop=50;
+
+          if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll50") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll50")};
+          console.log(" else : top = 50;");
+
         }
 
 
