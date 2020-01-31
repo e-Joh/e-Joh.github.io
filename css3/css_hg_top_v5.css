@@ -67,15 +67,15 @@ nav.w3-sidebar.side_vq_scroll60{
 nav.w3-sidebar.side_vq_scroll80{
   top: 80px!important;
 }
-
 nav.w3-sidebar.side_vq_with_overlay{
   top: 50px!important;
 }
 nav#mySidebarNw2.sidebar_visionq.side_vq_with_overlay {
  font-family: "Kristen ITC"!important, "Tempus Sans ITC"!important, Verdana!important;
- font-size: 15px!important;
- font-weight: bold!important;
- color:#036 !important;
+ font-size: 15px;
+ font-weight: bold;
+ color: #036; /* #036 */
+ top: 10px;
 }
 .main-visionq{
 	background-color: #ffffc1;
@@ -129,7 +129,8 @@ nav#mySidebarNw2.sidebar_visionq.side_vq_with_overlay {
     margin-right: 20px;
     padding-bottom: 10px
 }
-a:visited{
+
+/* a:visited{
     	font-weight: bold;
     	color: #036;
     	text-decoration: none;
@@ -147,4 +148,4 @@ a:hover{
 a{
 	outline: none;
 	text-decoration: none;
-}
+} */
