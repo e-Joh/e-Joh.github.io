@@ -24,19 +24,22 @@ body,h1,h2,h3,h4,h5,h6 {
   Verdana, Arial, Helvetica, sans-serif;
 }
 
-@media (min-width:993px){.hg-sidebar{top:250px!important}}
-@media (max-width:992px){.hg-sidebar{top:20px!important}}
+/* @media (min-width:993px){.hg-sidebar{top:250px!important}} */
+@media (min-width:993px){.sidebar_visionq{top:250px;}}
+/* @media (max-width:992px){.hg-sidebar{top:20px!important}} */
+@media (max-width:992px){.sidebar_visionq{top:20px;}}
 
+
+/* top: 250px; */
+/* width: 220px; */
+/* height: inherit; */
 .w3-sidebar {
   z-index: 3;
-  width: 220px;
-  top: 250px;
   bottom: 0;
-  height: inherit;
 }
 
 </style>
-<body  class="visionq_body_breed">
+<body  class="visionq_body">
 <!-- Nvbar on image : https://www.w3schools.com/howto/howto_css_navbar_image.asp-->
 <!---
 
@@ -58,7 +61,7 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
       <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </div>  <!--   end myTopBar    -->
 </div>
-<img src="afbeeldingen/visionquest_terschel_header_1797_328.jpg" alt="Terschelling" style="width:100%">
+<img id="headerpic" src="afbeeldingen/visionquest_terschel_header_1797_328.jpg" alt="Terschelling" style="width:100%">
 
 <!-- Sidebar -->
 <!--
@@ -69,7 +72,7 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 -->
 
 <nav class="w3-sidebar sidebar_visionq w3-bar-block w3-collapse w3-large w3-theme-l5-visionq w3-animate-left" id="mySidebarNw2">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-large w3-padding-large kruisje_visionq w3-hover-black w3-hide-large" title="Close Menu">
     <i class="fa fa-remove"></i>
   </a>
   <a class="w3-bar-item w3-button w3-hover-black" href="index_v5.html">Home</a>
@@ -218,11 +221,10 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 </div>
 
 <div class="w3-bar" style="position:relative">
-  <footer id="myFooter"class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <footer id="myFooterImage"class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px">
       <img class="w3-image" src="afbeeldingen/visionquest_terschel_footer_4608_305.jpg" alt="VisionQuest_Terschelling" width="1600" height="800">
   </footer>
 </div>
-
 <script>
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebarNw2");
@@ -233,24 +235,41 @@ var overlayBg = document.getElementById("myOverlay");
 var myMainDiv= document.getElementById("myMain");
 var ss = "";
 var count;
+var myx = -1000;
+
 // Toggle between showing and hiding the sidebar, and add overlay effect
 function w3_open() {
   if (mySidebar.style.display === 'block') {
+
+    if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_with_overlay") )  {$("#mySidebarNw2.w3-sidebar").removeClass("side_vq_with_overlay")};
     mySidebar.style.display = 'none';
     overlayBg.style.display = "none";
+
   } else {
+
+    if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_with_overlay") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_with_overlay")};
     mySidebar.style.display = 'block';
     overlayBg.style.display = "block";
   }
 }
+
 // Close the sidebar with the close button
 function w3_close() {
+  if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_with_overlay") )  {$("#mySidebarNw2.w3-sidebar").removeClass("side_vq_with_overlay")};
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
-//=====================================================
+// ==================================================
 $(document).ready(function(){
     var scrolling = false;
+
+    var ypict=250;
+    var margin=0;
+    var maxdist=50;
+
+    var myx = 0;
+    var pageYOffset=-10;
+
 
 setInterval( function() {
   if ( scrolling ) {
@@ -259,24 +278,44 @@ setInterval( function() {
      }
   }, 250 );
 
+// Let op: als windows horizontaal wordt geresized, klopt navbar-attribuut 'top' niet meer; de laatst toegevoegde class "side_vq_scroll#" wordt niet weggehaald
   $( window ).scroll( function() {
     scrolling = true;
-        //$( "p" ).last().text( "window.pageYOffset:" + window.pageYOffset + "  ; position : " + $("#mySidebarNw2.w3-sidebar").css("top" ) ) ;
+    ypict = Math.floor(parseFloat( $("#headerpic").css("height") ));
+        if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll50") )  {$("#mySidebarNw2.w3-sidebar").removeClass("side_vq_scroll50")};
+        if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll100") ) { $("#mySidebarNw2.w3-sidebar").removeClass("side_vq_scroll100")};
+        if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll150") ) { $("#mySidebarNw2.w3-sidebar").removeClass("side_vq_scroll150")};
+        if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll200") ) { $("#mySidebarNw2.w3-sidebar").removeClass("side_vq_scroll200")};
+        if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll250") ) { $("#mySidebarNw2.w3-sidebar").removeClass("side_vq_scroll250") };
 
-        if( window.pageYOffset < 250)
-        {
-            if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll50") )  $("#mySidebarNw2.w3-sidebar").removeClass("side_vq_scroll50");
+          myx=ypict-window.pageYOffset; // myx is afstand onderkant plaatje header tot bovenkant document
+
+          if( myx > (250-maxdist-margin)){
+           if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll250") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll250")};
+          }
+          else if( myx > (200-maxdist-margin) )
+           {
+                if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll200") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll200")};
+          }
+          else if( myx > (150-maxdist-margin) )
+          {
+               if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll150") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll150")};
+         }
+         else if( myx > (100-maxdist-margin) )
+         {
+              if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll100") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll100")};
         }
-        if( window.pageYOffset > 250)
+        else if( myx > (50-maxdist-margin) )
         {
-           $("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll50");
+             if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll50") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll50")};
+        }
+        else{
+          if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_scroll50") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_scroll50")};
         }
    });
 // ==================================================
 }); // end document ready
 
-
 </script>
-
 </body>
 </html>
