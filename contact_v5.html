@@ -23,19 +23,21 @@ body,h1,h2,h3,h4,h5,h6 {
   background-color: #5e8bad;   /* donkerblauw   uit body van standaard.css  */
   Verdana, Arial, Helvetica, sans-serif;
 }
-@media (min-width:993px){.hg-sidebar{top:250px!important}}
-@media (max-width:992px){.hg-sidebar{top:20px!important}}
+/* @media (min-width:993px){.hg-sidebar{top:250px!important}} */
+@media (min-width:993px){.sidebar_visionq{top:250px;}}
+/* @media (max-width:992px){.hg-sidebar{top:20px!important}} */
+@media (max-width:992px){.sidebar_visionq{top:20px;}}
 
+/* top: 250px; */
+/* width: 220px; */
+/* height: inherit; */
 .w3-sidebar {
   z-index: 3;
-  width: 250px;
-  top: 250px;
   bottom: 0;
-  height: inherit;
 }
 
 </style>
-<body  class="visionq_body_breed">
+<body  class="visionq_body">
 <!-- Nvbar on image : https://www.w3schools.com/howto/howto_css_navbar_image.asp-->
 <!---
 
@@ -67,8 +69,8 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
  z-index:99
 -->
 
-<nav class="w3-sidebar sidebar_visionq w3-bar-block w3-collapse hg-sidebar w3-large w3-theme-l5-visionq w3-animate-left" id="mySidebarNw2" >
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+<nav class="w3-sidebar sidebar_visionq w3-bar-block w3-collapse w3-large w3-theme-l5-visionq w3-animate-left" id="mySidebarNw2" >
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-large w3-padding-large kruisje_visionq w3-hover-black w3-hide-large" title="Close Menu">
     <i class="fa fa-remove"></i>
   </a>
   <a class="w3-bar-item w3-button w3-hover-black" href="index_v5.html">Home</a>
@@ -138,7 +140,7 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 </div>
 
 <div class="w3-bar" style="position:relative">
-  <footer id="myFooter"class="w3-display-container w3-content w3-wide" style="max-width: 1600px;min-width: 500px;" id="home">
+  <footer id="myFooterImage"class="w3-display-container w3-content w3-wide" style="max-width: 1600px;min-width: 500px;">
       <img class="w3-image" src="afbeeldingen/visionquest_terschel_footer_4608_305.jpg" alt="VisionQuest_Terschelling" width="1600" height="800">
   </footer>
 </div>
@@ -157,11 +159,13 @@ var count;
 function w3_open() {
   if (mySidebar.style.display === 'block') {
 
+    if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_with_overlay") )  {$("#mySidebarNw2.w3-sidebar").removeClass("side_vq_with_overlay")};
     mySidebar.style.display = 'none';
-
     overlayBg.style.display = "none";
+
   } else {
 
+    if(!$("#mySidebarNw2.w3-sidebar").hasClass("side_vq_with_overlay") ) {$("#mySidebarNw2.w3-sidebar").addClass("side_vq_with_overlay")};
     mySidebar.style.display = 'block';
     overlayBg.style.display = "block";
   }
@@ -169,6 +173,7 @@ function w3_open() {
 
 // Close the sidebar with the close button
 function w3_close() {
+  if($("#mySidebarNw2.w3-sidebar").hasClass("side_vq_with_overlay") )  {$("#mySidebarNw2.w3-sidebar").removeClass("side_vq_with_overlay")};
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
 }
