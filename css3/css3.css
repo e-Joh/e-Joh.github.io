@@ -1,0 +1,17 @@
+#content {
+	border-radius: 4px 4px 4px 4px;
+}
+
+#article img {
+	border-radius: 4px 4px 4px 4px;
+}
+#article table input, 
+#article table td {
+	border-radius: 4px 4px 4px 4px;
+}
+#article textarea {
+	border-radius: 4px 4px 4px 4px;
+}
+#article .bericht_verstuurd {
+	border-radius: 4px 4px 4px 4px;
+}
