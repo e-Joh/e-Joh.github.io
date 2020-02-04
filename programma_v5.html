@@ -1,67 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>programma_v5</title>
+<head>
+<meta name="description" content="Vision Quest in Nederland - Natuurretraite in Nederland." />
+<meta name="keywords" content="vision quest, sjamanisme, marco van schaik, heling, healing, training, zweethut, vision, quest, natuurretraite, terschelling, nederland" />
+<link rel="icon" href="ico/favicon.ico" type="image/ico" />
+<link rel="shortcut icon" href="ico/favicon.ico" />
+<title>Programma</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css3/w3.css">
 <link rel="stylesheet" href="css3/css_hg_top_v5.css">
+<link rel="stylesheet" href="css3/css_vquest.css">
 <link rel="stylesheet" href="css3/w3-theme-hg.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<style>
-/*
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-*/
-
-html{
-  background-color: #ffffc1;   /* lichtgeel dus niet meer donkerblauw, zoals body;  (=standaard.css)  */
-}
-
-body,h1,h2,h3,h4,h5,h6 {
-  color: #036;                 /*  uit body van standaard.css  */
-  background-color: #5e8bad;   /* donkerblauw   uit body van standaard.css  */
-  Verdana, Arial, Helvetica, sans-serif;
-}
-
-/* @media (min-width:993px){.hg-sidebar{top:250px!important}} */
-@media (min-width:993px){.sidebar_visionq{top:250px;}}
-/* @media (max-width:992px){.hg-sidebar{top:20px!important}} */
-@media (max-width:992px){.sidebar_visionq{top:20px;}}
-
-
-/* top: 250px; */
-/* width: 220px; */
-/* height: inherit; */
-.w3-sidebar {
-  z-index: 3;
-  bottom: 0;
-}
-
-</style>
+</head>
 <body  class="visionq_body">
-<!-- Nvbar on image : https://www.w3schools.com/howto/howto_css_navbar_image.asp-->
-<!---
-
-
-hier "more..> in topbar van een template:
-https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_website&stacked=h
-
-drop-down button "meer .."
-uit: https://www.w3schools.com/w3css/w3css_navigation.asp
-<div class="w3-dropdown-hover w3-mobile">
-  <button class="w3-button">Dropdown <i class="fa fa-caret-down"></i></button>
-  <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-
-hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
--->
 
 <div class="w3-top">
     <div class="w3-bar xw3-theme w3-left-align w3-large" id="myTopbar">
       <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </div>  <!--   end myTopBar    -->
 </div>
-<img id="headerpic" src="afbeeldingen/visionquest_terschel_header_1797_328.jpg" alt="Terschelling" style="width:100%">
+<div class="header_image_visionq">
+  <img id="headerpic" src="afbeeldingen/visionquest_terschel_header_1797_328.jpg" alt="Terschelling" style="width:100%">
+</div>
 
 <!-- Sidebar -->
 <!--
@@ -85,7 +49,7 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
   <a class="w3-bar-item w3-button w3-hover-black" href="#">Training</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="#">Visie</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="#">Literatuur</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Over ons</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="over_ons_v5.html">Over ons</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="contact_v5.html">Contact</a>
 </nav>
 
@@ -95,21 +59,20 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 <div style="width:50px;height: inherit">
 </div>
 
-<div class="main-theme-visionq">
-  <div class="w3-main main-theme-visionq" id="myMain" style="margin-left:220px">
+<div class="main-theme-visionq" id="mainInclusiefSidebar">
+  <div class="w3-main" id="myMain">
 
+    <!-- @@% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
 
-    <!--  <div class="w3-row w3-padding-64"> -->
-    <div class="w3-row" style="padding-top:4px!important">
-      <div class="w3-container">
+      <div class="w3-container container_titel" style="padding-top:4px!important">
 
         <p class="w3-xlarge">Programma</p>
 
     </div>
 
-    </div>   <!--   end row   --->
+    <!--  % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
 
-    <div class="w3-row" style="padding-top:0px!important">
+    <div class="w3-row visionq_first_row">
       <div class="w3-container">
 
       <p class="italic_visionq">Het verhaal waarin jij de hoofdrol speelt.</p>
@@ -117,8 +80,9 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 
     </div>   <!--   end row   --->
 
+    <!--  % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
 
-      <div class="w3-row" style="">
+      <div class="w3-row">
 
         <div class="w3-half w3-container">
 
@@ -127,7 +91,7 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
         </div>
 
 
-        <div class="w3-half w3-container container_vq_image"> <!--style="text-align: center; display: block;margin-left: auto!important;margin-right: auto!important  -->
+        <div class="w3-half w3-container container_half_row_vq_image container_half_row_vq_image_right">
 
           <img  class="w3-image" src="afbeeldingen/Jacky_klein.jpg" alt="" width="303" height="404">
 
@@ -136,10 +100,11 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 
       </div>  <!--   end row   --->
 
+      <!--  % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
 
-      <div class="w3-row" style="">
+      <div class="w3-row">
 
-      <div class="w3-half w3-container container_vq_image">
+      <div class="w3-half w3-container container_half_row_vq_image container_half_row_vq_image_left">
 
           <img  class="w3-image" src="afbeeldingen/basiskamp_klein.jpg" alt="" width="327" height="245">
 
@@ -160,7 +125,9 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 
       </div>  <!--   end row   --->
 
-      <div class="w3-row" style="">
+      <!--  % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
+
+      <div class="w3-row">
 
        <div class="w3-half w3-container">
 
@@ -170,16 +137,18 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
        </div>
 
 
-       <div class="w3-half w3-container container_vq_image">
+       <div class="w3-half w3-container container_half_row_vq_image container_half_row_vq_image_right">
 
            <img  class="w3-image" src="afbeeldingen/VQlokatie2.jpg" alt="" width="327" height="245">
 
        </div>
        </div>  <!--   end row   --->
 
-       <div class="w3-row" style="">
+       <!--  % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
 
-        <div class="w3-half w3-container container_vq_image">
+       <div class="w3-row visionq_last_row">
+
+        <div class="w3-half w3-container container_half_row_vq_image container_half_row_vq_image_left">
 
             <img  class="w3-image" src="afbeeldingen/VQlokatie1.jpg" alt="" width="318" height="239">
         </div>
@@ -188,7 +157,7 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
         <div class="w3-half w3-container">
           <div class="w3-panel panel_visionq">
 
-            <p class="test_quote-visionq">
+            <p class="quote-visionq">
       ......"Mijn vision quests brachten me bij mijn diepste essentie, bij mijn innerlijke weten.
       Alle maskers vallen af, je hoeft niets meer hoog te houden. Een ontmoeting met wie ik in wezen ben, in een veilige en heilige ruimte,
       met de natuur als spiegel.
@@ -203,8 +172,8 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 
       </div>
 
-
         </div>  <!--   end row   --->
+        <!--  ##% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
 
 
     <!--  met ;margin-bottom:10px komt er een strook blauwe achtergrond zichtbaar  -->
@@ -220,9 +189,9 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 </div>
 </div>
 
-<div class="w3-bar" style="position:relative">
-  <footer id="myFooterImage"class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px">
-      <img class="w3-image" src="afbeeldingen/visionquest_terschel_footer_4608_305.jpg" alt="VisionQuest_Terschelling" width="1600" height="800">
+<div class="w3-bar" id="vq_barFooter">
+  <footer id="myFooterImage"class="w3-display-container w3-content w3-wide">
+      <img class="w3-image" src="afbeeldingen/visionquest_terschel_footer_4608_305.jpg" alt="Terschelling" width="1600" height="800">
   </footer>
 </div>
 <script>
@@ -233,8 +202,6 @@ var mySidebar = document.getElementById("mySidebarNw2");
 var overlayBg = document.getElementById("myOverlay");
 
 var myMainDiv= document.getElementById("myMain");
-var ss = "";
-var count;
 var myx = -1000;
 
 // Toggle between showing and hiding the sidebar, and add overlay effect
