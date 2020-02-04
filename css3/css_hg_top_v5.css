@@ -124,6 +124,17 @@ footer#myFooterImage{
 }
 .container_half_row_vq_image_right{
 }
+.reverse-flow-direction{
+    display:flex;
+   flex-direction: column-reverse;
+}
+div#testFlowDirection{
+    display:flex;
+   flex-direction: column-reverse;
+}
+.column-reversible{
+  display:flex;
+}
 .panel_visionq{
   background-color:#f2fedc!important;
 }
