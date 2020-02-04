@@ -9,14 +9,14 @@ div#myTopbar{
   font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
   color: #ffffc1!important;
 }
-nav#mySidebar {
+/* nav#mySidebar {
  top: unset!important;
  bottom: unset!important;
  height: fit-content!important;
  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
  font-size: 17px;
  font-weight: bold;
-}
+} */
 nav#mySidebarNw2.sidebar_visionq {
  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
  font-size: 17px;
@@ -77,20 +77,52 @@ nav#mySidebarNw2.sidebar_visionq.side_vq_with_overlay {
  color: #036; /* #036 */
  top: 10px;
 }
+div#myMain{
+ margin-left: 220px;
+}
+div#vq_barFooter{
+  position:relative;
+}
+footer#myFooterImage{
+  max-width: 1600px;
+  min-width: 500px;
+}
 .main-visionq{
 	background-color: #ffffc1;
 }
 .main-theme-visionq{
 	background-color: #ffffc1;
 }
+.visionq_first_row{
+     padding-top:0px!important;
+}
+.visionq_last_row{
+}
+.visionq_row_first_of_2{
+     padding-top:0px!important;
+}
+.visionq_row_last_of_2{
+}
 .visionq_single_row{
    padding-top:0px!important;
-   height:600px;
+   height:650px;
 }
-.container_vq_image{
+.container_titel{
+   padding-bottom:0px!important;
+}
+.container_half_row_vq_image{
   padding-top: 32px!important;
   padding-bottom: 32px!important;
   text-align: center;
+}
+.container_whole_row_vq_image{
+  padding-top: 32px!important;
+  padding-bottom: 32px!important;
+  text-align: center;
+}
+.container_half_row_vq_image_left{
+}
+.container_half_row_vq_image_right{
 }
 .panel_visionq{
   background-color:#f2fedc!important;
@@ -116,7 +148,7 @@ nav#mySidebarNw2.sidebar_visionq.side_vq_with_overlay {
    color: rgb(255,0,0);
    padding-bottom: 32px!important;
 }
-.test_quote-visionq{
+.quote-visionq{
    font-size: 13px;
    font-style: italic;
    padding-bottom: 32px!important;
