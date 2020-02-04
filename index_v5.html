@@ -1,42 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>index_v5</title>
+<head>
+<meta name="description" content="Vision Quest in Nederland - Natuurretraite in Nederland." />
+<meta name="keywords" content="vision quest, sjamanisme, marco van schaik, heling, healing, training, zweethut, vision, quest, natuurretraite, terschelling, nederland" />
+<link rel="icon" href="ico/favicon.ico" type="image/ico" />
+<link rel="shortcut icon" href="ico/favicon.ico" />
+<title>Home</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css3/w3.css">
 <link rel="stylesheet" href="css3/css_hg_top_v5.css">
+<link rel="stylesheet" href="css3/css_vquest.css">
 <link rel="stylesheet" href="css3/w3-theme-hg.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<style>
-/*
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-*/
-
-html{
-  background-color: #ffffc1;   /* lichtgeel dus niet meer donkerblauw, zoals body;  (=standaard.css)  */
-}
-
-body,h1,h2,h3,h4,h5,h6 {
-  color: #036;                 /*  uit body van standaard.css  */
-  background-color: #5e8bad;   /* donkerblauw   uit body van standaard.css  */
-  Verdana, Arial, Helvetica, sans-serif;
-}
-/* @media (min-width:993px){.hg-sidebar{top:250px!important}} */
-@media (min-width:993px){.sidebar_visionq{top:250px;}}
-/* @media (max-width:992px){.hg-sidebar{top:20px!important}} */
-@media (max-width:992px){.sidebar_visionq{top:20px;}}
-
-/* top: 250px; */
-/* width: 220px; */
-/* height: inherit; */
-.w3-sidebar {
-  z-index: 3;
-  bottom: 0;
-}
-
-</style>
+</head>
 <body  class="visionq_body">
 <!-- Nvbar on image : https://www.w3schools.com/howto/howto_css_navbar_image.asp-->
 <!---
@@ -84,7 +63,7 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
   <a class="w3-bar-item w3-button w3-hover-black" href="#">Training</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="#">Visie</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="#">Literatuur</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Over ons</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="over_ons_v5.html">Over ons</a>
   <a class="w3-bar-item w3-button w3-hover-black" href="contact_v5.html">Contact</a>
 </nav>
 
@@ -94,19 +73,20 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 <div style="width:50px;height: inherit">
 </div>
 
-<div class="main-theme-visionq">
-  <div class="w3-main main-theme-visionq" id="myMain" style="margin-left:220px">
+<div class="main-theme-visionq" id="mainInclusiefSidebar">
+  <div class="w3-main" id="myMain">
 
-    <!--  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  -->
+    <!-- @@% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
 
-    <div class="w3-container"  style="padding-bottom:0px!important">
+    <div class="w3-container container_titel">
 
     <p class="w3-xlarge">
       Vision Quest - Natuurretraite op Terschelling</p>
     </div>
 
-    <!--  <div class="w3-row w3-padding-64"> -->
-      <div class="w3-row" style="padding-top:0px!important">
+    <!--  % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
+
+      <div class="w3-row visionq_row_first_of_2" >
 
         <div class="w3-half w3-container">
 
@@ -124,7 +104,7 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
         </div>
 
 
-        <div class="w3-half w3-container">
+        <div class="w3-half w3-container container_half_row_vq_image container_half_row_vq_image_right">
 
           <img  class="w3-image" src="afbeeldingen/IMGP1347klein.jpg" alt="" width="488" height="365">
 
@@ -133,8 +113,10 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 
       </div>  <!--   end row   --->
 
-      <div class="w3-row" >
-        <div class="w3-half w3-container container_vq_image">
+      <!--  % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
+
+      <div class="w3-row visionq_row_last_of_2" >
+        <div class="w3-half w3-container container_half_row_vq_image container_half_row_vq_image_left">
 
           <img  class="w3-image" src="afbeeldingen/rups3.jpeg" alt="" width="488" height="365">
 
@@ -142,9 +124,8 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 
         <div class="w3-half w3-container" style="padding-top:32px">
 
-    <!-- <div class="w3-panel w3-pale-green"> -->
     <div class="w3-panel panel_visionq">
-      <p class="test_quote-visionq">
+      <p class="quote-visionq">
       ...... "De Vision Quest heeft mij rustiger gemaakt. Ik kijk nog meer van binnenuit, zie de les van de ervaring veel eerder en laat me minder meeslepen.
       Ik heb niet direct een antwoord klaar en ben meer een waarnemer. Ja, ik ben er diepzinniger door geworden.
       Maak me nog minder druk om alledaagse beslommeringen, heb er geen mening meer over maar doe het gewoon of niet.
@@ -158,22 +139,17 @@ hier meer uitleg: https://www.w3schools.com/howto/howto_js_responsive_navbar_dro
 
       </div>    <!--   end row   --->
 
-      <!--  met ;margin-bottom:10px komt er een strook blauwe achtergrond zichtbaar  -->
-        <div class="footer copyright_vq">&copy; 2019 VisionQuest Natuurretraite Nederland</div>
+      <!-- ##% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % -->
 
-        <!-- <div class="w3-bar" style="position:relative">
-          <footer id="myFooter"class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-              <img class="w3-image" src="afbeeldingen/visionquest_terschel_footer_4608_305.jpg" alt="VisionQuest_Terschelling" width="1600" height="800">
-          </footer>
-        </div> -->
+        <div class="footer copyright_vq">&copy; 2019 VisionQuest Natuurretraite Nederland</div>
 
 <!-- END MAIN -->
 </div>
 </div>
 
-<div class="w3-bar" style="position:relative">
-  <footer id="myFooterImage"class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px">
-      <img class="w3-image" src="afbeeldingen/visionquest_terschel_footer_4608_305.jpg" alt="VisionQuest_Terschelling" width="1600" height="800">
+<div class="w3-bar" id="vq_barFooter">
+  <footer id="myFooterImage"class="w3-display-container w3-content w3-wide">
+      <img class="w3-image" src="afbeeldingen/visionquest_terschel_footer_4608_305.jpg" alt="Terschelling" width="1600" height="800">
   </footer>
 </div>
 
