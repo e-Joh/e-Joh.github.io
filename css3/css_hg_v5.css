@@ -1,0 +1,50 @@
+/*  uit: how to put navbar on image: https://www.w3schools.com/howto/howto_css_navbar_image.asp */
+.bg-img {
+	/* The image used */
+	background-image: url("../afbeeldingen/visionquest_terschel_header_1797_328.jpg");
+
+/*	min-height: 380px; */
+	min-height: 180px;
+
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;  /* origineel */
+/*	background-size: auto;  */
+
+	/* Needed to position the navbar */
+	position: relative;
+}
+
+/* Position the navbar container inside the image */
+.containerx {
+	position: absolute;
+	margin: 0px;
+	width: auto;
+}
+
+/* The navbar */
+.topnavx {
+	overflow: hidden;
+	background-color: #333;
+}
+
+/* Navbar links */
+.topnavx a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnavx a:hover {
+	background-color: #ddd;
+	color: black;
+
+}
+
+nav.w3-sidebar-hg {
+ top: 180px;
+}
