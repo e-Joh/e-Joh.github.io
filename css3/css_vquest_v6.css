@@ -1,0 +1,237 @@
+html{
+  background-color: #ffffc1;   /* lichtgeel dus niet meer donkerblauw, zoals body;  (=standaard.css)  */
+}
+body,h1,h2,h3,h4,h5,h6 {
+  color: #036;                 /*  uit body van standaard.css  */
+  background-color: #5e8bad;   /* donkerblauw   uit body van standaard.css  */
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.italic_visionq{
+    font-style: italic;
+}
+.visionq_body{
+    max-width: 1366px;
+    margin: auto;
+}
+@media (min-width:601px){
+  .column-reversible{flex-direction: row;}
+}
+@media (max-width:600px){
+  .column-reversible{flex-direction: column-reverse;}
+}
+div#myTopbar{
+  font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+  color: #ffffc1!important;
+}
+/* nav#mySidebar {
+ top: unset!important;
+ bottom: unset!important;
+ height: fit-content!important;
+ font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+ font-size: 17px;
+ font-weight: bold;
+} */
+nav#mySidebarNw2.sidebar_visionq {
+ font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+ font-size: 17px;
+ font-weight: bold;
+}
+nav.sidebar_visionq{
+  width: 220px!important;
+  height: 530px;  /* 14-02-2020; was 570 in v5 */
+}
+nav#mySidebarNw2.sidebar_visionq.side_vq_with_overlay{
+  height: 570px;  /* 14-02-2020; was 570 in v5 */
+}
+nav a.kruisje_visionq{
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+@media (max-width: 480px) {
+  nav#mySidebarNw2.sidebar_visionq.side_vq_with_overlay {
+   font-family: "Kristen ITC" "Tempus Sans ITC", Verdana !important;
+   font-size: 15px!important;
+   font-weight: bold!important;
+   color: 036!important; /* #036!important;  red!important; */
+   line-height: 1.4!important;
+   top: 5px!important;
+   /* height: 480px!important; */
+  }
+}
+@media (min-width:993px){.sidebar_visionq{top:250px;}}
+@media (max-width:992px){.sidebar_visionq{top:20px;}}
+@media (min-width: 1100px) and (max-height:635px){nav#mySidebarNw2.sidebar_visionq{
+  font-size: 16px!important;
+  line-height: 1.4!important;
+  height: 485px!important;
+  }}
+.w3-sidebar {
+  z-index: 3;
+  bottom: 0;
+}
+div#myOverlayNw{
+  z-index: 5!important;
+}
+nav.w3-sidebar.side_vq_scroll10{
+  top: 10px;
+}
+nav.w3-sidebar.side_vq_scroll50{
+  top: 50px;
+}
+nav.w3-sidebar.side_vq_scroll100{
+  top: 100px;
+}
+nav.w3-sidebar.side_vq_scroll150{
+  top: 150px;
+}
+nav.w3-sidebar.side_vq_scroll200{
+  top: 200px;
+}
+nav.w3-sidebar.side_vq_scroll250{
+  top: 250px;
+}
+nav.w3-sidebar.side_vq_scroll20{
+  top: 20px!important;
+}
+nav.w3-sidebar.side_vq_scroll40{
+  top: 40px!important;
+}
+nav.w3-sidebar.side_vq_scroll60{
+  top: 60px!important;
+}
+nav.w3-sidebar.side_vq_scroll80{
+  top: 80px!important;
+}
+nav.w3-sidebar.side_vq_with_overlay{
+  top: 50px!important;
+}
+nav#mySidebarNw2.sidebar_visionq.side_vq_with_overlay {
+ font-family: "Kristen ITC", "Tempus Sans ITC", Verdana !important;
+ font-size: 15px;
+ font-weight: bold;
+ color: #036; /* #036 */
+ top: 10px;
+}
+div#myMain{
+ margin-left: 220px;
+}
+div#vq_barFooter{
+  position:relative;
+}
+footer#myFooterImage{
+  max-width: 1600px;
+  min-width: 500px;
+}
+.main-visionq{
+	background-color: #ffffc1;
+}
+.main-theme-visionq{
+	background-color: #ffffc1;
+}
+.visionq_first_row{
+     padding-top:0px!important;
+}
+/* .visionq_last_row{
+} */
+.visionq_row_first_of_2{
+     padding-top:0px!important;
+}
+/* .visionq_row_last_of_2{
+} */
+.visionq_single_row{
+   padding-top:0px!important;
+   height:650px;
+}
+.container_titel{
+   padding-bottom:0px!important;
+}
+.container_half_row_vq_image{
+  padding-top: 32px!important;
+  padding-bottom: 32px!important;
+  text-align: center;
+}
+.container_whole_row_vq_image{
+  padding-top: 32px!important;
+  padding-bottom: 32px!important;
+  text-align: center;
+}
+/* .container_half_row_vq_image_left{
+} */
+/* .container_half_row_vq_image_right{
+} */
+/* .reverse-flow-direction{
+    display:flex;
+   flex-direction: column-reverse;
+}
+div#xxtestFlowDirection{
+    display:flex;
+   flex-direction: column-reverse;
+}
+.testFlowDirect1{
+    display:flex;
+   flex-direction: column-reverse;
+} */
+.column-reversible{
+  display:flex;
+}
+.vq-image-reverse{
+   max-width: 100%;
+   height: auto;
+}
+.panel_visionq{
+  background-color:#f2fedc!important;
+}
+.ul-visionq{
+  list-style-type: none;
+}
+.link-visionq{
+  text-decoration: none;
+  font-weight: bold;
+}
+.quote-visionq_orig{
+   font-size: 13px;
+   font-style: italic;
+   line-height: 1.5;
+   color: rgb(255,0,0);
+   padding-top: 32px!important;
+   padding-bottom: 32px!important;
+}
+.xquote-visionq{
+   font-size: 12px;
+   line-height: 1.5;
+   color: rgb(255,0,0);
+   padding-bottom: 32px!important;
+}
+.quote-visionq{
+   font-size: 13px;
+   font-style: italic;
+   padding-bottom: 32px!important;
+   color: #000!important;
+}
+.copyright_vq{
+    font-family: "Kristen ITC", "Tempus Sans ITC", Verdana;
+    color: #036;
+    text-align: right;
+    margin-right: 20px;
+    padding-bottom: 10px
+}
+
+/* a:visited{
+    	font-weight: bold;
+    	color: #036;
+    	text-decoration: none;
+    }
+a:active{
+	font-weight: bold;
+	color: #036;
+	text-decoration: none;
+}
+a:hover{
+	font-weight: bold;
+	color: #B00000;
+	text-decoration: none;
+}
+a{
+	outline: none;
+	text-decoration: none;
+} */
